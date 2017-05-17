@@ -8,7 +8,7 @@ namespace SHOPPING.Entities.Concrete
 {
     public class Category : IEntity
     {
-        public int categoryId { get; set; }
-        public string categoryName { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
     }
 }

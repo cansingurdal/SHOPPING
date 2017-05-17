@@ -11,7 +11,7 @@ namespace SHOPPING.MvcCoreUI.Entities
     {
         public CustomIdentityDbContext(DbContextOptions<CustomIdentityDbContext> options) : base(options)
         {
-
+            
         }
     }
 }

@@ -9,7 +9,7 @@ namespace SHOPPING.Bussiness.Abstract
     public interface IProductService
     {
         List<Product> GetAll();
-        List<Product> GetByGategory(int categoryId);
+        List<Product> GetByGategory(int CategoryId);
         void Add(Product product);
         void Update(Product product);
         void Delete(int productId);

@@ -22,9 +22,9 @@ namespace SHOPPING.Bussiness.Concrete
             return _productDal.GetList();
         }
 
-        public List<Product> GetByGategory(int categoryId)
+        public List<Product> GetByGategory(int CategoryId)
         {
-            return _productDal.GetList(p => p.categoryId == categoryId || categoryId == 0);
+            return _productDal.GetList(p => p.CategoryId == CategoryId || CategoryId == 0);
         }
 
         public void Add(Product product)
