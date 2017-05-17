@@ -12,6 +12,6 @@ namespace SHOPPING.Entities.Concrete
         public string ProductName { get; set; }
         public int categoryId { get; set; }
         public decimal UnitPrice { get; set; }
-        public short unitsInStock { get; set; }
+        public short UnitsInStock { get; set; }
     }
 }

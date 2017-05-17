@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using SHOPPING.Entities.Concrete;
 
-namespace SHOPPING.MvcCoreUI.Services
+namespace SHOPPING.MvcCoreUI.Models
 {
-    public interface ICartSessionService
+    public class ShippingDetailsViewModel
     {
-        Cart GetCart();
-        void SetCart(Cart cart);
+        public ShippingDetails ShippingDetails { get; set; }
     }
 }

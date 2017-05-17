@@ -32,6 +32,10 @@ namespace SHOPPING.MvcCoreUI.Controller
 
             return View(model);
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
 
 
     }

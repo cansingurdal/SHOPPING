@@ -32,5 +32,10 @@ namespace SHOPPING.MvcCoreUI.Services
         {
             _httpContextAccessor.HttpContext.Session.SetObject("cart", cart);
         }
+
+        public void SetCart(Cart cart)
+        {
+            _httpContextAccessor.HttpContext.Session.SetObject("cart", cart);
+        }
     }
 }

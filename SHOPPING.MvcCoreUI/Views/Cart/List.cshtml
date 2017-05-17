@@ -1,4 +1,5 @@
-﻿@model SHOPPING.MvcCoreUI.Models.CartSummaryViewModel
+﻿@model SHOPPING.MvcCoreUI.Models.CartListViewModel
+
 @{
     ViewBag.Title = "title";
     Layout = "~/Views/_Layout.cshtml";
@@ -18,9 +19,9 @@
         <tr>
             <td>@item.Product.ProductName</td>
             <td>@item.Product.UnitPrice</td>
-            <td>@item.Product.unitsInStock</td>
+            <td>@item.Product.UnitsInStock</td>
             <td>@item.Quantity</td>
-            <td class="text-right"><a class="btn btn-xs btn-danger" asp-controller="Cart" asp-action="Remove" asp-route-productId="@item.Product.ProductId"><span class="glyphicon glyphicon-align-right glyphicon-remove"></span>Remove Product</a></td>
+            <td class="text-right"><a class="btn btn-xs btn-danger" asp-controller="Cart" asp-action="Remove" asp-route-productId="@item.Product.ProductId"><span class="glyphicon glyphicon-remove"></span> remove from cart</a></td>
         </tr>
     }
     <tr>
@@ -37,17 +38,17 @@
         </td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
         <td>
             <a asp-controller="Product" asp-action="Index" class="btn btn-xs btn-default">
-                <span class="glyphicon glyphicon-shopping-cart"></span>Continue Shopping
+                <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
             </a>
         </td>
         <td class="text-right">
             <a asp-controller="Cart" asp-action="Complete" class="btn btn-xs btn-success">
-                <span class="glyphicon glyphicon-shopping-play"></span>Go To Checkout
+                <span class="glyphicon glyphicon-shopping-play"></span> Go To Checkout
             </a>
         </td>
     </tr>
